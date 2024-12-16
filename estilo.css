@@ -1,0 +1,171 @@
+html {
+    background-color: black;
+    color: rgb(148, 146, 146);
+    max-width: 1440px;
+}
+
+
+a {
+    text-decoration: none;
+    color: rgb(42, 191, 176);
+}
+
+h2 {
+    margin-left: 25px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+p {
+    font-size: 20px;
+}
+
+.logoback {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 250px;
+}
+
+.logo {
+    width: 500px;
+    height: 300px;
+    position: absolute;
+}
+
+.redes-sociais {
+    display: flex;
+    position: relative;
+    left: 630px;
+}
+
+
+.redes-sociais a {
+    color: rgb(42, 191, 176);
+    font-size: 30px;
+    padding: 10px;
+}
+
+.redes-sociais a:hover {
+    cursor: pointer;
+    background-color: rgb(42, 191, 176);
+    color: #000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    background: black;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.navbar a {
+    display: inline-block;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.navbar a:hover {
+    background: rgb(42, 191, 176);
+    color: black;
+}
+
+.home {
+    margin: 20px;
+    height: 500px;
+    display: flex;
+}
+
+.teclado {
+    position: absolute;
+    left: 55%;
+    top: 65%;
+    opacity: 0.5;
+}
+
+
+.home p {
+    padding: 25px;
+}
+
+.linkPagPrincipal {
+    text-decoration: none;
+    position: absolute;
+    border-radius: 5px;
+    right: 40px;
+    top: 50px;
+    padding: 7px;
+    border: 1px solid wheat;
+}
+
+.linkPagPrincipal:hover {
+    background-color: rgb(42, 191, 176);
+    color: #000;
+
+}
+
+.sobreMarina {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fotoMarina {
+    width: 300px;
+    height: 300px;
+    padding-top: 80px;
+}
+
+.sobreMarina a i {
+    font-size: 25px;
+    position: absolute;
+    right: 530px;
+    top: -45px
+}
+
+.conteudoCursos {
+    margin: 20px;
+    border: 1px solid white;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+.conteudoCursos img {
+    opacity: 0.4;
+    position: relative;
+    left: 40px;
+    width: 40%;
+    height: 70%;
+    padding: 50px;
+}
+
+.conteudoCursos p {
+    padding: 25px;
+}
+
+.videos {
+    margin: 50px;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+}
+
+.videos a {
+    padding: 50px;
+}
+
+.localizacao {
+    font-size: 25px;
+    margin-top: 80px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
