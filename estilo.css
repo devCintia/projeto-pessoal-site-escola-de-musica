@@ -1,8 +1,29 @@
-html {
-    background-color: black;
-    color: rgb(148, 146, 146);
-    max-width: 1440px;
-}
+/* @media(max-width:1220px){
+    .redes-sociais  {
+       
+        
+    }
+   
+    .navbar {
+        width: 100%;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+
+    .home{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        background-image: url(./img/teclado.jpg);
+        background-repeat: no-repeat;
+    }
+    .teclado{
+        
+       display: none;
+    }
+} */
+
 
 
 a {
@@ -11,8 +32,7 @@ a {
 }
 
 h2 {
-    margin-left: 25px;
-    margin-top: 50px;
+    justify-content: center;
     text-align: center;
 }
 
@@ -22,53 +42,45 @@ p {
 
 .logoback {
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 250px;
+    height: auto;
 }
 
 .logo {
     width: 500px;
     height: 300px;
-    position: absolute;
 }
 
-.redes-sociais {
+.nav {
     display: flex;
-    position: relative;
-    left: 630px;
-}
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: #333;
 
-
-.redes-sociais a {
-    color: rgb(42, 191, 176);
-    font-size: 30px;
-    padding: 10px;
-}
-
-.redes-sociais a:hover {
-    cursor: pointer;
-    background-color: rgb(42, 191, 176);
-    color: #000;
 }
 
 .navbar {
     display: flex;
-    justify-content: center;
-    background: black;
-    padding: 20px;
-    margin-top: 40px;
+    /* justify-content: center;
+    padding: 20px; */
+}
+
+.navbar li {
+    margin: 0 10px;
 }
 
 .navbar a {
-    display: inline-block;
-    font-size: 20px;
-    text-decoration: none;
-    text-align: center;
-    padding: 25px;
+    /* display: inline-block; */
+    font-size: 25px;
+    /* text-align: center; */
+    padding: 20px;
     border-radius: 10px;
+    transition: 0.3s;
+
 }
 
 .navbar a:hover {
@@ -76,96 +88,188 @@ p {
     color: black;
 }
 
+.navbar li a i {
+    font-size: 20px;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.menu-toggle div {
+    width: 30px;
+    height: 4px;
+    background: white;
+    margin: 2px 0;
+    transition: 0.4s;
+}
+
+.menu-toggle.active div:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-toggle.active div:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active div:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
 .home {
-    margin: 20px;
-    height: 500px;
     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    margin: 100px 20px 80px 20px;
+    gap: 10px;
 }
 
-.teclado {
-    position: absolute;
-    left: 55%;
-    top: 65%;
-    opacity: 0.5;
+.home_informacoes {
+    text-align: center;
+}
+
+.home_informacoes :first-child {
+    margin-bottom: 20px;
+}
+
+.home video {
+    width: 45%;
+
 }
 
 
-.home p {
+/* .home p {
     padding: 25px;
+} */
+
+.cursos {
+    margin-top: 60px;
+    width: 100%;
 }
 
-.linkPagPrincipal {
-    text-decoration: none;
+.conteudoCursos {
+    width: 100%;
+    min-height: 300px;
+    margin-top: 60px;
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.conteudoCursos.piano,
+.conteudoCursos.bateria {
+    flex-direction: row-reverse;
+}
+
+.conteudoCursos img {
+    opacity: 0.4;
+    width: 35%;
+
+
+}
+
+.conteudoCursos p {
+    margin: 25px;
+    flex: 1;
+
+}
+
+.videos {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    gap: 30px;
+}
+
+.carousel-container {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    /* height: 1000px; */
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.carousel {
+    display: flex;
+    width: 300px;
+    height: 500px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    height: 100%;
+}
+
+button {
     position: absolute;
-    border-radius: 5px;
-    right: 40px;
-    top: 50px;
-    padding: 7px;
-    border: 1px solid wheat;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
 }
 
-.linkPagPrincipal:hover {
-    background-color: rgb(42, 191, 176);
-    color: #000;
-
+.prev {
+    left: 10px;
 }
+
+.next {
+    right: 10px;
+}
+
+button:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
 
 .sobreMarina {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 100px;
+    width: 100%;
+}
+
+.sobreMarina p {
+    text-align: center;
+    margin: 20px;
 }
 
 .fotoMarina {
-    width: 300px;
-    height: 300px;
-    padding-top: 80px;
-}
-
-.sobreMarina a i {
-    font-size: 25px;
-    position: absolute;
-    right: 530px;
-    top: -45px
-}
-
-.conteudoCursos {
-    margin: 20px;
-    border: 1px solid white;
-    height: 500px;
-    display: flex;
-    justify-content: center;
-}
-
-.conteudoCursos img {
-    opacity: 0.4;
-    position: relative;
-    left: 40px;
     width: 40%;
-    height: 70%;
-    padding: 50px;
+    height: 40%;
+    padding-top: 30px;
 }
 
-.conteudoCursos p {
-    padding: 25px;
-}
-
-.videos {
-    margin: 50px;
-    border: 1px solid white;
-    display: flex;
-    flex-direction: column;
-}
-
-.videos a {
-    padding: 50px;
-}
 
 .localizacao {
     font-size: 25px;
     margin-top: 80px;
+    margin-bottom: 30px;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 15px;
+}
+
+.localizacao iframe {
+    margin-top: 50px;
+    max-width: 90%;
 }

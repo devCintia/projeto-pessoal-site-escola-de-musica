@@ -1,0 +1,157 @@
+@media(max-width:1240px) {
+    .home video {
+        display: none;
+
+    }
+
+    /* .home_informacoes p{
+        margin-top: 35px;
+    } */
+}
+
+@media(max-width:1098px) {
+    .navbar {
+        flex-wrap: wrap;
+
+    }
+
+    .navbar a {
+        padding: 8px;
+        font-size: 19px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+
+
+    .logoback {
+        flex-direction: row;
+        /* position:static; */
+        justify-content: space-around;
+    }
+
+    .logo {
+        width: 300px;
+        height: 180px;
+    }
+
+    .menu-toggle {
+        display: flex;
+
+    }
+
+    .navbar {
+        position: absolute;
+        position: fixed;
+        top: 180px;
+        right: 0;
+        width: 25%;
+        background: #333;
+        flex-direction: column;
+        display: none;
+        text-align: start;
+        flex-wrap: wrap;
+
+        padding: 10px 0;
+    }
+
+    .navbar a {
+        margin: 20px;
+        text-align:center;
+    }
+
+    .navbar a:hover {
+        padding: 2px;
+    }
+
+    .navbar li {
+        margin: 10px;
+
+        /* text-align: center; */
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
+    .home {
+        width: 70%;
+        /* margin-top: 350px; */
+        flex-wrap: wrap;
+    }
+
+    .conteudoCursos {
+        width: 74%;
+        flex-wrap: wrap;
+    }
+
+    .conteudoCursos img {
+        display: none;
+    }
+
+    .conteudoCursos.piano {
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+            url(/img/piano.jpg) no-repeat center/cover;
+
+    }
+
+    .conteudoCursos.violao {
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+            url(/img/violao.jpg) no-repeat center/cover;
+    }
+
+    .conteudoCursos.bateria {
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+            url(/img/bateria.jpg) no-repeat center/cover;
+    }
+
+    .conteudoCursos.canto {
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+            url(/img/aula\ de\ canto.jpg) no-repeat center/cover;
+    }
+
+    .videos {
+        width: 70%;
+    }
+
+    .carousel-container {
+        width: 350px;
+
+    }
+
+    .sobreMarina {
+        width: 70%;
+    }
+
+    .sobreMarina p {
+        width: 70%;
+    }
+
+    .localizacao {
+        width: 74%;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+@media(max-width:685px) {
+
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar a {
+        font-size: 15px;
+        text-align: start;
+        padding: 15px;
+    }
+
+    .sobreMarina p,
+    .home-informacoes p {
+        margin: 30px;
+    }
+
+}
