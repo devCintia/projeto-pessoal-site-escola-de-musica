@@ -3,16 +3,11 @@
         display: none;
 
     }
-
-    /* .home_informacoes p{
-        margin-top: 35px;
-    } */
 }
 
 @media(max-width:1098px) {
     .navbar {
         flex-wrap: wrap;
-
     }
 
     .navbar a {
@@ -38,7 +33,6 @@
 
     .menu-toggle {
         display: flex;
-
     }
 
     .navbar {
@@ -58,7 +52,7 @@
 
     .navbar a {
         margin: 20px;
-        text-align:center;
+        text-align: center;
     }
 
     .navbar a:hover {
@@ -67,8 +61,6 @@
 
     .navbar li {
         margin: 10px;
-
-        /* text-align: center; */
     }
 
     .navbar.active {
@@ -77,7 +69,6 @@
 
     .home {
         width: 70%;
-        /* margin-top: 350px; */
         flex-wrap: wrap;
     }
 
@@ -93,7 +84,6 @@
     .conteudoCursos.piano {
         background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
             url(/img/piano.jpg) no-repeat center/cover;
-
     }
 
     .conteudoCursos.violao {
@@ -137,7 +127,6 @@
 
 
 @media(max-width:685px) {
-
 
     .navbar {
         flex-direction: column;
