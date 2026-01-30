@@ -19,3 +19,7 @@ function toggleMenu() {
     document.querySelector('.navbar').classList.toggle('active');
     document.querySelector('.menu-toggle').classList.toggle('active');
 }
+
+
+
+

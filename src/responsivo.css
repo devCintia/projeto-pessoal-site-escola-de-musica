@@ -5,67 +5,60 @@
     }
 }
 
-@media(max-width:1098px) {
-    .navbar {
-        flex-wrap: wrap;
-    }
-
-    .navbar a {
-        padding: 8px;
-        font-size: 19px;
-    }
-}
 
 @media screen and (max-width: 768px) {
 
 
-
     .logoback {
         flex-direction: row;
-        /* position:static; */
-        justify-content: space-around;
+        justify-content: space-between;
+        padding: 10px 20px;
     }
 
     .logo {
-        width: 300px;
-        height: 180px;
+        width: 220px;
+        height: auto;
+    }
+
+    nav {
+        justify-content: flex-end;
+        position: relative;
     }
 
     .menu-toggle {
         display: flex;
     }
 
+
     .navbar {
         position: absolute;
-        position: fixed;
-        top: 180px;
-        right: 0;
-        width: 25%;
-        background: #333;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        /* background: #2f2f2f; */
         flex-direction: column;
+        align-items: center;
+        padding: 15px 0;
         display: none;
-        text-align: start;
-        flex-wrap: wrap;
-
-        padding: 10px 0;
-    }
-
-    .navbar a {
-        margin: 20px;
-        text-align: center;
-    }
-
-    .navbar a:hover {
-        padding: 2px;
-    }
-
-    .navbar li {
-        margin: 10px;
+        border-radius: 0 0 12px 12px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
     }
 
     .navbar.active {
         display: flex;
     }
+
+    .navbar li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar a {
+        width: 100%;
+        padding: 14px 0;
+        font-size: 18px;
+    }
+
 
     .home {
         width: 70%;
@@ -83,22 +76,22 @@
 
     .conteudoCursos.piano {
         background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-            url(/img/piano.jpg) no-repeat center/cover;
+            url(./img/piano.jpg) no-repeat center/cover;
     }
 
     .conteudoCursos.violao {
         background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-            url(/img/violao.jpg) no-repeat center/cover;
+            url(./img/violao.jpg) no-repeat center/cover;
     }
 
     .conteudoCursos.bateria {
         background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-            url(/img/bateria.jpg) no-repeat center/cover;
+            url(./img/bateria.jpg) no-repeat center/cover;
     }
 
     .conteudoCursos.canto {
         background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-            url(/img/aula\ de\ canto.jpg) no-repeat center/cover;
+            url(./img/aula\ de\ canto.jpg) no-repeat center/cover;
     }
 
     .videos {
@@ -122,25 +115,6 @@
         width: 74%;
         justify-content: center;
         align-items: center;
-    }
-}
-
-
-@media(max-width:685px) {
-
-    .navbar {
-        flex-direction: column;
-    }
-
-    .navbar a {
-        font-size: 15px;
-        text-align: start;
-        padding: 15px;
-    }
-
-    .sobreMarina p,
-    .home-informacoes p {
-        margin: 30px;
     }
 
 }
