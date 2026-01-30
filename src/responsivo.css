@@ -13,6 +13,8 @@
         flex-direction: row;
         justify-content: space-between;
         padding: 10px 20px;
+        position: sticky;
+        top: 0;
     }
 
     .logo {
@@ -21,12 +23,15 @@
     }
 
     nav {
+        width: auto;
+        display: flex;
         justify-content: flex-end;
-        position: relative;
     }
 
     .menu-toggle {
         display: flex;
+        margin-left: auto;
+
     }
 
 
@@ -37,11 +42,15 @@
         width: 100%;
         /* background: #2f2f2f; */
         flex-direction: column;
-        align-items: center;
-        padding: 15px 0;
+
+
         display: none;
         border-radius: 0 0 12px 12px;
         box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+        z-index: 999;
+
+        align-items: flex-end;
+        padding-right: 20px;
     }
 
     .navbar.active {
@@ -49,13 +58,14 @@
     }
 
     .navbar li {
-        width: 100%;
-        text-align: center;
+        width: auto;
+        text-align: right;
     }
 
     .navbar a {
+        text-align: right;
         width: 100%;
-        padding: 14px 0;
+        padding: 12px 0;
         font-size: 18px;
     }
 
